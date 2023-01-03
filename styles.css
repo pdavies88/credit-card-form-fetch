@@ -1,0 +1,153 @@
+@font-face {
+  font-family: "Oakes Grotesk";
+  src: url("./assets/fonts/oakes-grotesk-regular.woff2") format("woff2");
+}
+
+html {
+  font-family: "Oakes Grotesk", sans-serif;
+  color: #212121;
+}
+
+::placeholder {
+  color: #545c52;
+  opacity: 1;
+}
+
+.card-wrapper {
+  margin-bottom: 60px;
+}
+
+.card-image__container,
+.card-wrapper {
+  position: relative;
+}
+
+.card-image__back,
+.card-image__front {
+  border-radius: 30px;
+}
+
+.card-image__back {
+  position: relative;
+  left: 90px;
+}
+.card-image__front {
+  position: absolute;
+  top: 30px;
+  left: 0;
+}
+
+.card-image__logo {
+  position: absolute;
+  top: 60px;
+  left: 30px;
+}
+
+.card-text__container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.card-text__number {
+  left: 40px;
+  position: absolute;
+  top: 210px;
+  font-size: 30px;
+}
+
+.card-text__name {
+  position: absolute;
+  top: 100%;
+  transform: translateY(-100%);
+  left: 40px;
+}
+
+.card-text__expiry {
+  position: absolute;
+  top: 100%;
+  transform: translateY(-100%);
+  left: 600px;
+  text-align: center;
+}
+
+.card-text__cvv {
+  position: absolute;
+  top: 100%;
+  transform: translateY(calc(-100% - 30px));
+  left: 715px;
+  text-align: center;
+}
+
+.form-field__row {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.form-field__row label {
+  color: #167c80;
+  display: block;
+  font-size: 12px;
+}
+
+.form-field__row label small {
+  border: 1px solid #167c80;
+  padding: 1px 3px;
+  border-radius: 50%;
+  font-size: 6px;
+  position: relative;
+  top: -3px;
+}
+
+.form-field__row input {
+  border: none;
+  border-bottom: 2px solid #007055;
+  width: 100%;
+  margin: 0;
+  padding: 4px 0;
+  font-size: 16px;
+}
+
+.form-field__long {
+  flex-grow: 6;
+  padding-right: 20px;
+}
+
+.form-field__mid {
+  flex-grow: 3;
+  padding-right: 20px;
+}
+
+.form-field__short {
+  flex-grow: 1;
+  padding-right: 20px;
+}
+
+form input[type="submit"] {
+  background: #167c80;
+  border: 0;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.success-message__container {
+  padding: 30px;
+  border: 2px solid #007055;
+  background-color: lightgreen;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.failure-message__container {
+  padding: 30px;
+  border: 2px solid red;
+  background-color: lightcoral;
+  text-align: center;
+  border-radius: 10px;
+}
